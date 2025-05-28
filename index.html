@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Ruta Telefónica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Dashboard Seguimiento ruta telefónica Quala</h1>
+  <section class="formulario">
+  <h2>Agregar Nuevo Cliente</h2>
+  <form id="formulario-cliente">
+    <input type="text" id="nombre" placeholder="Nombre del cliente" required />
+    <select id="estado" required>
+      <option value="">Selecciona estado</option>
+      <option value="Contactado">Contactado</option>
+      <option value="Buzón">Buzón</option>
+      <option value="Errado">Errado</option>
+      <option value="Datos Mal">Datos Mal</option>
+      <option value="cliente con pedido ">cliente con pedido </option>
+    </select>
+    <input type="date" id="fechaContacto" required />
+    <select id="vendedora" required>
+      <option value="">Selecciona vendedora</option>
+      <option value="Angélica">Angélica</option>
+      <option value="Laura">Laura</option>
+    </select>
+    <button type="submit">Guardar</button>
+  </form>
+</section>
+
+
+
+  <div class="filtro">
+
+    
+    <button onclick="mostrarDatos('angelica')">Angélica</button>
+    <button onclick="mostrarDatos('laura')">Laura</button>
+  </div>
+
+  <section class="kpis">
+    <div class="card">Asignados: <span id="asignados">0</span></div>
+    <div class="card">Contactados: <span id="contactados">0</span></div>
+    <div class="card">Contactados: <span id="ventas">0</span></div>
+    <div class="card">Contactados: <span id="buzon">0</span></div>
+    <div class="card">Errados: <span id="errados">0</span></div>
+    <div class="card">Datos Mal: <span id="datosMal">0</span></div>
+    <div class="card">Cumplimiento: <span id="cumplimiento">0%</span></div>
+    <tbody id="tabla-clientes"></tbody>
+
+
+  </section>
+
+  <section class="tabla">
+    <h2>Seguimiento por Cliente</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Estado</th>
+          <th>Último Contacto</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-clientes"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

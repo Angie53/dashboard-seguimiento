@@ -1,0 +1,26 @@
+[
+{
+    "cliente": "Cliente 1",
+    "estado": "Contactado",
+    "ultimoContacto": "2025-05-28",
+    "vendedora": "Angélica"
+},
+{
+    "cliente": "Cliente 2",
+    "estado": "Buzón",
+    "ultimoContacto": "2025-05-28",
+    "vendedora": "Laura"
+},
+{
+    "cliente": "Cliente 3",
+    "estado": "Errado",
+    "ultimoContacto": "2025-05-28",
+    "vendedora": "Laura"
+},
+{
+    "cliente": "Cliente 4",
+    "estado": "Datos Mal",
+    "ultimoContacto": "2025-05-28",
+    "vendedora": "Angélica"
+}
+]

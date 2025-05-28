@@ -1,0 +1,64 @@
+body {
+font-family: sans-serif;
+padding: 10px;
+background: #f7f7f7;
+}
+
+h1 {
+text-align: center;
+color: #333;
+}
+
+.filtro {
+text-align: center;
+margin: 10px 0;
+}
+
+.filtro button {
+padding: 10px 15px;
+margin: 0 5px;
+font-size: 16px;
+background: #007bff;
+color: white;
+border: none;
+border-radius: 6px;
+}
+
+.kpis {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 10px;
+margin: 20px 0;
+}
+
+.card {
+background: white;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 2px 5px #ccc;
+text-align: center;
+font-weight: bold;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+background: white;
+margin-top: 20px;
+}
+
+th, td {
+padding: 10px;
+border: 1px solid #ccc;
+text-align: center;
+}
+
+@media (max-width: 600px) {
+.kpis {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+table, th, td {
+    font-size: 14px;
+}
+}
